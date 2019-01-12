@@ -1,1 +1,1 @@
-<img src="images/download3.png" alt="mailnotifierimage" class="inline"/>
+<img src="docs/images/download3.png" alt="mailnotifierimage" class="inline"/>
