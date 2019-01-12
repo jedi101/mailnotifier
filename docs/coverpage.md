@@ -1,1 +1,1 @@
-<img src="images/Download3.png" alt="mailnotifierimage" class="inline"/>
+![](images/Download3.png)
