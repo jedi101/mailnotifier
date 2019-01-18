@@ -1,5 +1,5 @@
 - [Welcome](/)
-- [Used Hardware]
+- [Used Hardware](UsedHardware.md)
 - [How to]
   - [Setup]
 - [Diagrams]
