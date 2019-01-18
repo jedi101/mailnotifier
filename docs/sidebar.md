@@ -1,4 +1,4 @@
-- [Welcome]
+- [Welcome](/)
 - [Used Hardware]
 - [How to]
   - [Setup]
