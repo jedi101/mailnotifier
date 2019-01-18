@@ -1,3 +1,12 @@
+- [Welcome](/)
+- [Used Hardware]
+- [How to]
+  - [Setup]
+- [Diagrams]
+- [Used Libraries]
+- [Further Reading]
+
+
 - [Demo](/)
 - [Markdown](markdown)
 - **Links**
