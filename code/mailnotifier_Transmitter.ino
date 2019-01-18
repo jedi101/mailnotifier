@@ -2,8 +2,8 @@
 #include <RH_RF95.h>
 #include "HX711.h"
 
-// enable Debugging
-//#define DEBUG 1
+// enable Debugging (uncomment to activate)
+#define DEBUG 1
 
 //Feather m0 w/wing 
 #define RFM95_RST     11   // "A"
@@ -20,7 +20,7 @@
 #define wait 100
 #define shortWait 10
 #define endlessLoop 1
-#define scaleThreshold 0.01
+#define scaleThreshold 0.15
 #define transmitPower 23
 #define radiopacketLength 20
 
