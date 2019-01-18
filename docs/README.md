@@ -1,3 +1,3 @@
 ```pdf
-	docs/Diagrams/Diestelkamp_Golin_Mailnotifier_Requirementsdiagram.pdf
+	Diagrams/Diestelkamp_Golin_Mailnotifier_Requirementsdiagram.pdf
 ```
