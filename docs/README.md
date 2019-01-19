@@ -34,6 +34,9 @@ For this project we used the following libraries:
 - Adafruit_SleepyDog
 - HX711 (which you can download [here](https://github.com/bogde/HX711))
 
+## Diagrams
+
+![System diagram](/Diagrams/Systemdiagram.png)
 
 ```pdf
 	Diagrams/Diestelkamp_Golin_Mailnotifier_Requirementsdiagram.pdf
