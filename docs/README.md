@@ -69,9 +69,7 @@ For this project we used the following libraries:
 ![Activity diagram](Diagrams/ActivityDiagram.png "Activity diagram")
 
 ### Statechart (Mailnotifier)
-![Statechart](Diagrams/Statechart.png "Statechart")
+![Statechart](Diagrams/StateChart.png "Statechart")
 
 ### Requirements diagram (Mailnotifier)
-```pdf
-	Diagrams/RequirementsDiagram.pdf
-```
+![](Diagrams/RequirementsDiagram.pdf)
