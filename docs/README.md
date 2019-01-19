@@ -19,8 +19,7 @@ Here is a list of the hardware used for this project:
 
 Before you can use this code, you have to change a few things.
 
-### 1.
-
+### 1. Setup credentials for Wifi
 First of all, you have to enter your WiFi information in [arduino_secrets.h](/code/mailnotifier_Receiver/arduino_secrets.h). To do this, you need to write your WiFi name (the SSID) within the first quotation marks and your password within the second quotation marks like so...
 
 
@@ -28,8 +27,8 @@ First of all, you have to enter your WiFi information in [arduino_secrets.h](/co
 #define SECRET_SSID "YOURSSIDHERE"
 #define SECRET_PASS "YOURSECRETPASSWORD"
 ```
-### 2.
 
+### 2. Setup notifications
 Secondly, you need to create a webhook for Slack to send messages when you receive mail. Just follow [this simple tutorial](https://api.slack.com/incoming-webhooks).
 
 ```
@@ -43,8 +42,7 @@ After you got the URL to the Channel you want to get the messages in, you need t
     client.println("POST /services/TEBT7GSKY/BEFJ15M9Q/DKq9wFoLj9dfOkrDeK9ay2Qp HTTP/1.1");
 ```
 
-### 3.
-
+### 3. Calibrate Loadcell
 Lastly, you need to calibrate your load cell (do this after the load cell is placed in the mailbox). To do this, you need to run the calibration sketch. With it you'll find the **_calibration_factor_** and the **_zero_factor_**. Replace the numbers associated with these two factors within [*mailnotifier_Transmitter*](https://github.com/IoT-Lab-Minden/mailnotifier/blob/master/code/mailnotifier_Transmitter/mailnotifier_Transmitter.ino) with the numbers you just found with this sketch.
 
 ```
