@@ -76,4 +76,4 @@ For this project we used the following libraries:
 ![Statechart](Diagrams/StateChart.png "Statechart")
 
 ### Requirements diagram (Mailnotifier)
-![RequirementsDiagram](Diagrams/RequirementsDiagram.png "RequirementsDiagram")
+![RequirementsDiagram](Diagrams/RequirementsDiagram.svg "RequirementsDiagram")
