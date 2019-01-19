@@ -65,6 +65,10 @@ For this project we used the following libraries:
 ### System diagram (Mailnotifier)
 ![System diagram](Diagrams/SystemDiagram.svg "System diagram")
 
+
+### Use Case (Mailnotifier)
+![Use Case](Diagrams/UseCase "Use Case")
+
 ### Activity diagram (Mailnotifier)
 ![Activity diagram](Diagrams/ActivityDiagram.png "Activity diagram")
 
