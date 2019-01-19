@@ -40,6 +40,9 @@ For this project we used the following libraries:
 ### System diagram (Mailnotifier)
 ![System diagram](Diagrams/SystemDiagram.svg "System diagram")
 
+### System diagram (Mailnotifier)
+![Activity diagram](Diagrams/ActivityDiagram.png "Activity diagram")
+
 ### Requirements diagram (Mailnotifier)
 ```pdf
 	Diagrams/Diestelkamp_Golin_Mailnotifier_Requirementsdiagram.pdf
