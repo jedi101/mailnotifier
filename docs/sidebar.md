@@ -1,3 +1,4 @@
-- [Mailnotifier](/)
-- [Further Reading]
-- [Test]
+- [Welcome](/)
+- [Used Hardware]
+- [How to]
+  - [Setup]
