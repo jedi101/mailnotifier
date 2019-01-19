@@ -15,3 +15,13 @@ Here is a list of the hardware used for this project:
 - JST PH 2-Pin Cable (Female Connector) (2x if you want to power the receiver with batteries too)
 - Battery holder for 18650 batteries (same as above)
 - 18650 batteries
+
+## How To
+
+Before you can use this code, you have to change a few things.
+
+First of all, you have to enter your WiFi information in *arduino_secrets.h*. To do this, you need to write your WiFi name (the SSID) within the first quotation marks and your password within the second quotation marks.
+
+Secondly, you need to create a webhook for Slack to send messages when you receive mail. Just follow [this simple tutorial](https://api.slack.com/incoming-webhooks). After you got the URL to the Channel you want to get the messages in, you need to find the line within *mailnotifier_Receiver* that starts with **_client.println("POST_** and ends with **_HTTP/1.1");_**. Copy everything after the **_.com_** part of your URL and paste it in between this two parts.
+
+Lastly, you need to calibrate your load cell (do this after the load cell is placed in the mailbox). To do this, you need to run the calibration sketch. With it you'll find the **_calibration_factor_** and the **_zero_factor_**. Replace the numbers associated with these two factors within *mailnotifier_Transmitter* with the numbers you just found with this sketch.
