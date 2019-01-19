@@ -28,12 +28,12 @@ Lastly, you need to calibrate your load cell (do this after the load cell is pla
 ## Used libraries
 
 For this project we used the following libraries:
-- SPI (Standard library used for communication to RF95 LoRa module via SPI)
+- SPI (Standard library used for communication to RF95 LoRa module via SPI) -> [SPI documentation]https://www.arduino.cc/en/Reference/SPI
 - WiFi101 (Library for SSL encrypted communication via the ATWINC1500 wifi chip) ->
 [Wifi101 documentation](https://www.arduino.cc/en/Reference/WiFi101)
-- RH_RF95 (as part of the radiohead library you can downoad -> [here](https://github.com/adafruit/RadioHead))
+- RH_RF95 (as part of the radiohead library you can downoad -> [here](https://github.com/adafruit/RadioHead)
 - Adafruit_SleepyDog (Watchdog and Powersaving implementation) -> [github repo](https://github.com/adafruit/Adafruit_SleepyDog)
-- HX711 (For taking weight measurements) -> [github repo](https://github.com/bogde/HX711))
+- HX711 (For taking weight measurements) -> [github repo](https://github.com/bogde/HX711)
 
 ## Diagrams
 
@@ -45,5 +45,5 @@ For this project we used the following libraries:
 
 ### Requirements diagram (Mailnotifier)
 ```pdf
-	Diagrams/Diestelkamp_Golin_Mailnotifier_Requirementsdiagram.pdf
+	Diagrams/equirementsDiagram.pdf
 ```
