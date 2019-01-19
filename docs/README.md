@@ -72,4 +72,4 @@ For this project we used the following libraries:
 ![Statechart](Diagrams/StateChart.png "Statechart")
 
 ### Requirements diagram (Mailnotifier)
-![RequirementsDiagram.pdf](Diagrams/RequirementsDiagram.pdf)
+![RequirementsDiagram.pdf](https://docs.google.com/viewer?url=https://github.com/IoT-Lab-Minden/mailnotifier/blob/master/docs/Diagrams/RequirementsDiagram.pdf)
