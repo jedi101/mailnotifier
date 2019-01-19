@@ -1,2 +1,2 @@
-- [Mailnotifier](/)
+- [Mailnotifier](\)
 - [Further Reading]
