@@ -33,7 +33,7 @@ For this project we used the following libraries:
 [Wifi101 documentation](https://www.arduino.cc/en/Reference/WiFi101)
 - RH_RF95 (as part of the radiohead library you can downoad -> [here](https://github.com/adafruit/RadioHead))
 - Adafruit_SleepyDog (Watchdog and Powersaving implementation) -> [github repo](https://github.com/adafruit/Adafruit_SleepyDog)
-- HX711 (which you can download -> [here](https://github.com/bogde/HX711))
+- HX711 (For taking weight measurements) -> [github repo](https://github.com/bogde/HX711))
 
 ## Diagrams
 
