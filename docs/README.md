@@ -72,4 +72,4 @@ For this project we used the following libraries:
 ![Statechart](Diagrams/StateChart.png "Statechart")
 
 ### Requirements diagram (Mailnotifier)
-![](Diagrams/RequirementsDiagram.pdf)
+![RequirementsDiagram.pdf](Diagrams/RequirementsDiagram.pdf)
