@@ -36,7 +36,7 @@ For this project we used the following libraries:
 
 ## Diagrams
 
-![System diagram](/Diagrams/Systemdiagram.png)
+![System diagram](Diagrams/Systemdiagram.png)
 
 ```pdf
 	Diagrams/Diestelkamp_Golin_Mailnotifier_Requirementsdiagram.pdf
