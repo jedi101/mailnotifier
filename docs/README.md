@@ -67,7 +67,7 @@ For this project we used the following libraries:
 
 
 ### Use Case (Mailnotifier)
-![Use Case](Diagrams/UseCase "Use Case")
+![Use Case](Diagrams/UseCase.png "Use Case")
 
 ### Activity diagram (Mailnotifier)
 ![Activity diagram](Diagrams/ActivityDiagram.png "Activity diagram")
