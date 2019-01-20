@@ -47,7 +47,7 @@ Here is a list of the hardware used for this project:
 Before you can use this code, you have to change a few things.
 
 ### Wiring schema:
-![wiring_schema+](images/wiring_schema+.png)
+![wiring_schema_base](images/wiring_schema_base.png)
 
 ### 1. Setup credentials for Wifi
 First of all, you have to enter your WiFi information in [arduino_secrets.h](/code/mailnotifier_Receiver/arduino_secrets.h). To do this, you need to write your WiFi name (the SSID) within the first quotation marks and your password within the second quotation marks like so...
