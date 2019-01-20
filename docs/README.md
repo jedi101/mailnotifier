@@ -2,6 +2,8 @@
 
 Mailnotifier, as the name suggests, notifies you when you get mail. It uses LoRa and WiFi to send you a message within Slack as soon as your mail is in your mailbox.
 
+![test](images/Adafruit-Feather-M0-WiFi---.png)
+
 ## Used Hardware
 
 Here is a list of the hardware used for this project:
