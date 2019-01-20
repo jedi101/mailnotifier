@@ -2,7 +2,11 @@
 
 Mailnotifier, as the name suggests, notifies you when you get mail. It uses LoRa and WiFi to send you a message within Slack as soon as your mail is in your mailbox.
 
-![test](images/Adafruit-Feather-M0-WiFi---.png)
+### Adafruit Feather M0 Wifi
+![feather_m0_wifi](images/Adafruit-Feather-M0-WiFi---.png)
+
+### Adafruit LoRa Featherwing
+![wiring_schema](images/wiring_schema2.png)
 
 ## Used Hardware
 
@@ -17,9 +21,33 @@ Here is a list of the hardware used for this project:
 - [Battery holder for 18650 batteries (same as above)](https://www.mouser.de/ProductDetail/Keystone-Electronics/1043?qs=sGAEpiMZZMvxqoKe%252bDjhru3bNJqZAwi1iQWc%2fA0A0JQ%3d)
 - [18650 batteries](https://www.adafruit.com/product/353)
 
+### Why we have choosen Adafruits Feather M0 + ATWINC1500 wifi module:
+* Measures 2.1" x 0.9" x 0.3" (53.65mm x 23mm x 8mm) without headers soldered in.
+* ATSAMD21G18 @ 48MHz with 3.3V logic/power
+256KB FLASH, 32KB SRAM, No EEPROM
+* 3.3V regulator (AP2112K-3.3) with 600mA peak current output, WiFi can draw 300mA peak during xmit
+* USB native support, comes with USB bootloader and serial port debugging
+* 20 GPIO pins (For controling the servo for example)
+* Hardware Serial, hardware I2C, hardware SPI support (We use SPI to communicate with the LoRa module)
+* 8 x PWM pins
+* 10 x analog inputs (We use pin 9 to measure batterie voltage)
+* 1 x analog output
+* Built in 200mA lipoly charger with charging status indicator LED
+* Pin #13 red LED for general purpose blinking (we use it to show incoming LoRa packets)
+* Power/enable pin
+* 4 mounting holes
+* Reset button
+
+### Pinout:
+![feather_m0_wifi_pinout](images/feather_m0_wifi_pinout_v1.2-1.png)
+
+
 ## How To
 
 Before you can use this code, you have to change a few things.
+
+### Wiring schema:
+![wiring_schema](images/wiring_schema.png)
 
 ### 1. Setup credentials for Wifi
 First of all, you have to enter your WiFi information in [arduino_secrets.h](/code/mailnotifier_Receiver/arduino_secrets.h). To do this, you need to write your WiFi name (the SSID) within the first quotation marks and your password within the second quotation marks like so...
