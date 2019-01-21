@@ -2,21 +2,11 @@
 
 Mailnotifier, as the name suggests, notifies you when you get mail. It uses encrypted messages via LoRa and WiFi to send you a message within Slack as soon as your mail is in your mailbox. To archive this goal we devided this project into two distinct parts:
 
-#### The Transmitter, consisting of: A Load Cell, a Load Cell Amplifier to get better weight measurements, an Adafruit Feather M0 with attached LoRa Feather wing on top for LoRa communication and an attached LiPo Batterie) and...
+#### The Transmitter consisting of:
+A Load Cell, a Load Cell Amplifier to get better weight measurements, an Adafruit Feather M0 with attached LoRa Feather wing on top for LoRa communication and an attached LiPo Batterie) and...
 
-#### The Receiver part consisting of: An Adafruit Feather M0 with onboard Wifi connectivity via the ATWINC1500 wich sends the outgoing slackmassages if a transmission from the transmitter that we got new mail via the attached LoRa featherwing has arrived.
-
-### Adafruit Feather M0 Wifi
-![feather_m0_wifi](images/Adafruit-Feather-M0-WiFi---.png)
-
-### Adafruit LoRa Featherwing
-![wiring_schema2](images/wiring_schema2.png)
-
-### HX711 Load cell amplifier
-![HX711_Load_cell_amplifier](images/HX711_Load_cell_amplifier.png)
-
-### Load cell
-![LoadCell](images/LoadCell.png)
+#### The Receiver part consisting of:
+An Adafruit Feather M0 with onboard Wifi connectivity via the ATWINC1500 wich sends the outgoing slackmassages if a transmission from the transmitter that we got new mail via the attached LoRa featherwing has arrived.
 
 ## Used Hardware
 
@@ -31,7 +21,10 @@ Here is a list of the hardware used for this project:
 - [Battery holder for 18650 batteries (same as above)](https://www.mouser.de/ProductDetail/Keystone-Electronics/1043?qs=sGAEpiMZZMvxqoKe%252bDjhru3bNJqZAwi1iQWc%2fA0A0JQ%3d)
 - [18650 batteries](https://www.adafruit.com/product/353)
 
-### Why we have choosen Adafruits Feather M0 + ATWINC1500 wifi module as our underlying base:
+### Adafruit Feather M0 Wifi
+![feather_m0_wifi](images/Adafruit-Feather-M0-WiFi---.png)
+
+#### Why we have choosen Adafruits Feather M0 + ATWINC1500 wifi module as our underlying base:
 * Measures 2.1" x 0.9" x 0.3" (53.65mm x 23mm x 8mm) without headers soldered in.
 * ATSAMD21G18 @ 48MHz with 3.3V logic/power
 256KB FLASH, 32KB SRAM, No EEPROM
@@ -48,12 +41,18 @@ Here is a list of the hardware used for this project:
 * 4 mounting holes
 * Reset button
 
-### Pinout
-![feather_m0_wifi_pinout](images/feather_m0_wifi_pinout_v1.2-1.png)
+### Adafruit LoRa Featherwing
+![wiring_schema2](images/wiring_schema2.png)
+
+### HX711 Load cell amplifier
+![HX711_Load_cell_amplifier](images/HX711_Load_cell_amplifier.png)
+
+### Load cell
+![LoadCell](images/LoadCell.png)
 
 ## How To
 
-Before you can use this code, you have to change a few things.
+Before you can use our code, you have to install all needed libraries inside your IDE, solder some wires to LoRa modules and the Load cell amplifier and setup a few things. But do not hesitate, we will explain everything in detail or at least provide all the necessary information to setup everything up properly.
 
 ### The Transmitter wiring schema:
 ![wiring_schema_transmitter](images/wiring_schema_base.png)
@@ -63,7 +62,6 @@ Before you can use this code, you have to change a few things.
 
 ### 1. Setup credentials for Wifi
 First of all, you have to enter your WiFi information in [arduino_secrets.h](/code/mailnotifier_Receiver/arduino_secrets.h). To do this, you need to write your WiFi name (the SSID) within the first quotation marks and your password within the second quotation marks like so...
-
 
 ```
 #define SECRET_SSID "YOURSSIDHERE"
@@ -91,8 +89,6 @@ Lastly, you need to calibrate your load cell (do this after the load cell is pla
 #define calibration_factor -405000.0
 #define zero_factor -37744.0
 ```
-
-
 
 ## Diagrams
 
@@ -123,6 +119,8 @@ For this project we used the following libraries:
 
 ## Datasheets
 
+### Pinout
+* [Feather M0_wifi_pinout](images/feather_m0_wifi_pinout_v1.2-1.png)
 * [ATSAMD21 Datasheet - Its long, but its a good read](https://cdn-learn.adafruit.com/assets/assets/000/030/130/original/atmel-42181-sam-d21_datasheet.pdf?1453847579)
 * [Atmel Software Programming guide for WINC1500 - this is for the underlying ASF codebase that is 'wrapped' in Adafruit_WINC1500 but its still very handy reference](https://cdn-learn.adafruit.com/assets/assets/000/030/129/original/atmel-42418-software-programming-guide-for-atwinc1500-wifi-using-samd21-xplained-pro_userguide.pdf?1453847486)
 * [SX127x Datasheet - The RFM9X LoRa radio chip itself](https://cdn-shop.adafruit.com/product-files/3179/sx1276_77_78_79.pdf)
