@@ -8,6 +8,12 @@ Mailnotifier, as the name suggests, notifies you when you get mail. It uses LoRa
 ### Adafruit LoRa Featherwing
 ![wiring_schema2](images/wiring_schema2.png)
 
+### HX711 Load cell amplifier
+![HX711_Load_cell_amplifier](images/HX711_Load_cell_amplifier.png)
+
+### Load cell
+![LoadCell](images/LoadCell.png)
+
 ## Used Hardware
 
 Here is a list of the hardware used for this project:
@@ -38,9 +44,8 @@ Here is a list of the hardware used for this project:
 * 4 mounting holes
 * Reset button
 
-### Pinout:
+### Pinout
 ![feather_m0_wifi_pinout](images/feather_m0_wifi_pinout_v1.2-1.png)
-
 
 ## How To
 
@@ -80,21 +85,12 @@ Lastly, you need to calibrate your load cell (do this after the load cell is pla
 #define zero_factor -37744.0
 ```
 
-## Used libraries
 
-For this project we used the following libraries:
-- SPI (Standard library used for communication to RF95 LoRa module via SPI) => [SPI documentation](https://www.arduino.cc/en/Reference/SPI)
-- WiFi101 (Library for SSL encrypted communication via the ATWINC1500 wifi chip) =>
-[Wifi101 documentation](https://www.arduino.cc/en/Reference/WiFi101)
-- RH_RF95 (as part of the radiohead library for communication via LoRa => [github repo](https://github.com/adafruit/RadioHead)
-- Adafruit_SleepyDog (Watchdog and Powersaving implementation) => [github repo](https://github.com/adafruit/Adafruit_SleepyDog)
-- HX711 (For taking weight measurements) => [github repo](https://github.com/bogde/HX711)
 
 ## Diagrams
 
 ### System diagram (Mailnotifier)
-![System diagram](Diagrams/SystemDiagram.svg "System diagram")
-
+![System diagram](Diagrams/system_diagram.svg "System diagram")
 
 ### Use Case (Mailnotifier)
 ![Use Case](Diagrams/UseCase.png "Use Case")
@@ -107,3 +103,26 @@ For this project we used the following libraries:
 
 ### Requirements diagram (Mailnotifier)
 ![RequirementsDiagram](Diagrams/RequirementsDiagram.svg "RequirementsDiagram")
+
+## Used libraries
+
+For this project we used the following libraries:
+- SPI (Standard library used for communication to RF95 LoRa module via SPI) => [SPI documentation](https://www.arduino.cc/en/Reference/SPI)
+- WiFi101 (Library for SSL encrypted communication via the ATWINC1500 wifi chip) =>
+[Wifi101 documentation](https://www.arduino.cc/en/Reference/WiFi101)
+- RH_RF95 (as part of the radiohead library for communication via LoRa => [github repo](https://github.com/adafruit/RadioHead)
+- Adafruit_SleepyDog (Watchdog and Powersaving implementation) => [github repo](https://github.com/adafruit/Adafruit_SleepyDog)
+- HX711 (For taking weight measurements) => [github repo](https://github.com/bogde/HX711)
+
+## Datasheets
+
+* [ATSAMD21 Datasheet - Its long, but its a good read](https://cdn-learn.adafruit.com/assets/assets/000/030/130/original/atmel-42181-sam-d21_datasheet.pdf?1453847579)
+* [Atmel Software Programming guide for WINC1500 - this is for the underlying ASF codebase that is 'wrapped' in Adafruit_WINC1500 but its still very handy reference](https://cdn-learn.adafruit.com/assets/assets/000/030/129/original/atmel-42418-software-programming-guide-for-atwinc1500-wifi-using-samd21-xplained-pro_userguide.pdf?1453847486)
+* [SX127x Datasheet - The RFM9X LoRa radio chip itself](https://cdn-shop.adafruit.com/product-files/3179/sx1276_77_78_79.pdf)
+* [RFM9X - The radio module, which contains the SX1272 chipset](https://cdn-learn.adafruit.com/assets/assets/000/031/659/original/RFM95_96_97_98W.pdf?1460518717)
+* [EagleCAD PCB Files on GitHub for Adafruit-Feather-M0-WiFi-WINC1500-PCB](https://github.com/adafruit/Adafruit-Feather-M0-WiFi-WINC1500-PCB)
+* [Adafruit Feather PCM Soldermask](datasheets/feather_fabprint.png "Feather_fabprint")
+* [Adafruit Feather wiring schema](datasheets/feather_schem.png "feather_schem")
+* [Fritzing object for Adafruit-Feather-M0-WiFi-WINC1500 inside Fritzing library](https://github.com/adafruit/Fritzing-Library/tree/master/parts)
+* [EagleCAD PCB files on GitHub for the LoRa FeatherWing](https://github.com/adafruit/Adafruit-Radio-FeatherWing-PCB)
+* [Fritzing object for Adafruit LoRa FeatherWing inside Fritzing library](https://github.com/adafruit/Fritzing-Library)
