@@ -6,6 +6,8 @@ Mailnotifier, as the name suggests, notifies you when you get mail. It uses encr
 A Load Cell, a Load Cell Amplifier to get better weight measurements, an Adafruit Feather M0 with attached LoRa Feather wing on top for LoRa communication and an attached LiPo Batterie) and...
 
 #### The Receiver part consisting of:
+![](images/receiverMailBoxanimated.gif)
+
 An Adafruit Feather M0 with onboard Wifi connectivity via the ATWINC1500 wich sends the outgoing slackmassages if a transmission from the transmitter that we got new mail via the attached LoRa featherwing has arrived.
 
 ## Used Hardware
