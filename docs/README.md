@@ -121,17 +121,18 @@ For this project we used the following libraries:
 - Adafruit_SleepyDog (Watchdog and Powersaving implementation) => [github repo](https://github.com/adafruit/Adafruit_SleepyDog)
 - HX711 (For taking weight measurements) => [github repo](https://github.com/bogde/HX711)
 
-## Datasheets
+## Datasheets & Pinouts
 
-### Pinout
 * [Feather M0_wifi_pinout](https://cdn-learn.adafruit.com/assets/assets/000/046/213/original/m0_wifi_pinout_v1.2.pdf?1504807256)
 * [ATSAMD21 Datasheet - Its long, but its a good read](https://cdn-learn.adafruit.com/assets/assets/000/030/130/original/atmel-42181-sam-d21_datasheet.pdf?1453847579)
 * [Atmel Software Programming guide for WINC1500 - this is for the underlying ASF codebase that is 'wrapped' in Adafruit_WINC1500 but its still very handy reference](https://cdn-learn.adafruit.com/assets/assets/000/030/129/original/atmel-42418-software-programming-guide-for-atwinc1500-wifi-using-samd21-xplained-pro_userguide.pdf?1453847486)
 * [SX127x Datasheet - The RFM9X LoRa radio chip itself](https://cdn-shop.adafruit.com/product-files/3179/sx1276_77_78_79.pdf)
 * [RFM9X - The radio module, which contains the SX1272 chipset](https://cdn-learn.adafruit.com/assets/assets/000/031/659/original/RFM95_96_97_98W.pdf?1460518717)
 * [EagleCAD PCB Files on GitHub for Adafruit-Feather-M0-WiFi-WINC1500-PCB](https://github.com/adafruit/Adafruit-Feather-M0-WiFi-WINC1500-PCB)
-* [Adafruit Feather PCM Soldermask](datasheets/feather_fabprint.png)
-* [Adafruit Feather wiring schema](datasheets/feather_schem.png)
+* Adafruit Feather Soldermask
+![Adafruit Feather PCM Soldermask](datasheets/feather_fabprint.png "Adafruit Feather Soldermask")
+* Adafruit Feather wiring schema
+![Adafruit Feather wiring schema](datasheets/feather_schem.png )
 * [Fritzing object for Adafruit-Feather-M0-WiFi-WINC1500 inside Fritzing library](https://github.com/adafruit/Fritzing-Library/tree/master/parts)
 * [EagleCAD PCB files on GitHub for the LoRa FeatherWing](https://github.com/adafruit/Adafruit-Radio-FeatherWing-PCB)
 * [Fritzing object for Adafruit LoRa FeatherWing inside Fritzing library](https://github.com/adafruit/Fritzing-Library)
