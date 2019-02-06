@@ -3,6 +3,8 @@
 Mailnotifier, as the name suggests, notifies you when you get mail. It uses encrypted messages via LoRa and WiFi to send you a message within Slack as soon as your mail is in your mailbox. To archive this goal we devided this project into two distinct parts:
 
 #### The Transmitter consisting of:
+![](images/transmitter_render.png) 
+
 A Load Cell, a Load Cell Amplifier to get better weight measurements, an Adafruit Feather M0 with attached LoRa Feather wing on top for LoRa communication and an attached LiPo Batterie) and...
 
 #### The Receiver part consisting of:
