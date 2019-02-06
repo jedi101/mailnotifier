@@ -1,4 +1,4 @@
 # Mailnotifier
 ### ... make postboxes smart again ...
 
-![](images/mailnotifierHomeAnsicht.png)
+![](images/receiverMailBoxanimated.gif)
