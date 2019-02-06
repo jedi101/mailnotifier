@@ -1,6 +1,6 @@
 # Mailnotifier
 ### ... make postboxes smart again ...
-![logo](images/coverimage.png)
+![logo](images/coverimage_small.png)
 
 [Overview](#main)
 [Used Hardware](https://iot-lab-minden.github.io/mailnotifier/#/?id=used-hardware)
